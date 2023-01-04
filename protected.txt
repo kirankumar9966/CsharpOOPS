@@ -1,0 +1,17 @@
+public class Constructer
+{
+    public int a;
+    public string name;
+    public Constructer(int A,string Name){
+        this.a=A;
+        this.name=Name;
+         Console.WriteLine(a+" "+name);
+    }
+      public static void Main(string[] args){
+        Constructer s1=new Constructer(100,"kiran");
+       // Console.WriteLine(a+" "+name);
+       // Console.WriteLine(s1.name+" "+s1.a);
+    }
+
+}
+  

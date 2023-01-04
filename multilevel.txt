@@ -1,0 +1,22 @@
+using System;
+
+public class Multilevel
+{
+    public int a=100;
+   public void m1(){
+       Console.WriteLine("Parent clases");
+   }
+}
+public class Inheritance: Multilevel {
+    public void m2(){
+          Console.WriteLine("child class 2");
+    }
+}
+
+public class NotWorking : Inheritance {
+    public static void Main(string[] args){
+        NotWorking m=new NotWorking();
+        m.m1();
+        m.m2();
+    }
+}

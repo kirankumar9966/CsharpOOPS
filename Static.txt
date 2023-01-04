@@ -1,0 +1,15 @@
+public class Static
+{
+    public int a=200;
+    static string companyname="patG";
+    
+      public static void Main(string[] args){
+          Console.WriteLine(Static.companyname);
+        Static s1=new Static();
+         Console.WriteLine(s1.a);
+       
+     
+    }
+
+}
+  

@@ -1,0 +1,26 @@
+using System;
+
+public class class1
+{
+    public  int a=100;
+   public void m1(){
+
+      Console.WriteLine(a+" "+"1st clases");
+   }
+}
+public class class2: class1 {
+    public string name="kiran";
+    public  void m2(){
+        
+          Console.WriteLine(name);
+    }
+}
+
+public class class3 : class1 {
+    public static void Main(string[] args){
+        class2 m=new class2();
+       m.m2();
+       m.m1();
+         
+    }
+}

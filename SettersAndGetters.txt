@@ -1,0 +1,22 @@
+using System;
+public class SetandGet
+{
+    public int a;
+    public string name;
+    public void setValues(int A,string Name){
+        this.a=A;
+        this.name=Name;
+    }
+    public void getValues(){
+        Console.WriteLine(a+" "+name);
+    }
+      public static void Main(string[] args){
+        SetandGet s1=new SetandGet();
+        s1.setValues(200,"omm");
+        s1.getValues();
+     
+    }
+
+}
+  
+  				
