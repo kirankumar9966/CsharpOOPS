@@ -1,0 +1,25 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class overloading
+{
+   public void m1(int x){
+       Console.WriteLine("result is "+x*x);
+   }
+   public void m1(int x ,int y){
+        Console.WriteLine("result is "+x*y);
+   }
+    public void m1(convert.toint){
+        Console.WriteLine("result is "+l);
+   }
+
+ public static void Main(string[] args)
+    {
+        overloading o=new overloading();
+        o.m1(10);
+        o.m1(10,20);
+        o.m1(111);
+    }
+}

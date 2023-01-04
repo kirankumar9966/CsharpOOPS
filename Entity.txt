@@ -1,0 +1,37 @@
+using System;
+
+public class Address
+{
+    public string city , distric , state;
+    public Address (string City, string Distric ,string State){
+        this.city=City;
+        this.distric=Distric;
+        this.state=State;
+    }
+}
+
+public class Employee{
+    public int id;
+    public string name;
+    public Address address;  //Employee has -A address
+    
+    public Employee(int Id,string Name,Address Add){
+        this.id=Id;
+        this.name=Name;
+        this.address=Add;
+    }
+    public void display(){
+        Console.WriteLine(
+            $"Id :{id} \nName : {name} \nDistric : {address.distric} \nCity : {address.city}  \nState : {address.state}"
+            );
+            
+    }
+}
+
+public class TestAggregation{
+    public static void Main(string[] args){
+        Address al=new Address("kadapa","kamalapuram", "Andhra pradesh");
+        Employee el=new Employee(1,"kiran kumar",al);
+        el.display();
+    }
+}

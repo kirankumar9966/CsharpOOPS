@@ -1,0 +1,34 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class overriding
+{
+  public virtual void m1(){
+      Console.WriteLine("its a 1st program");
+  }
+}
+public class overriding1 : overriding{
+  public override void m1(){
+      
+      Console.WriteLine("its a 2nd program");
+  }
+}
+public class overriding2 : overriding{
+  public override void m1(){
+      
+      Console.WriteLine("its a 3rd program");
+  }
+}
+class test{
+  public static void Main(string[] args)
+    {
+        overriding o=new overriding();
+        overriding a=new overriding1();
+         overriding b=new overriding2();
+         o.m1();
+         a.m1();
+         b.m1();
+    }
+}
