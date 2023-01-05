@@ -1,0 +1,15 @@
+using System;
+
+class GenericClass<M>{
+    public GenericClass(M msg)
+    {
+        Console.WriteLine(msg);
+    }
+}
+class program{
+    static void Main(string[] args){
+        GenericClass<string> gc =new GenericClass<string>("THIS IS A GENERIC CLASS");
+        GenericClass<int> gcInt =new GenericClass<int> (111);
+        GenericClass<char> gcChar =new GenericClass<char>('k');
+    }
+}

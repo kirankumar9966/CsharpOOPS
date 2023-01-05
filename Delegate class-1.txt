@@ -1,0 +1,23 @@
+using System;
+delegate void EmployeeDelegate();
+ class Demo{
+    static public void develop(){
+        
+        Console.WriteLine("Iam a developer");
+    }
+      public static void test(){
+         
+        Console.WriteLine("Iam a Tester");
+    }
+}
+class program{
+    public static void Main(string[] args){
+        EmployeeDelegate m1=new EmployeeDelegate(Demo.develop);
+         EmployeeDelegate m2=new EmployeeDelegate(Demo.test);
+         EmployeeDelegate m3=m1 + m2;
+         EmployeeDelegate m4=m2 + m1;
+         m3();
+         m4();
+         
+    }
+}

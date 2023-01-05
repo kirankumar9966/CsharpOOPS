@@ -1,0 +1,15 @@
+using System;
+
+class GenericClass {
+    public void show<T>(T msg) {
+        Console.WriteLine(msg);
+    }
+}
+class program{
+    static void Main(string[] args){
+        GenericClass gc=new GenericClass();
+        gc.show("this is generic method "+" ");
+        gc.show(1011);
+        gc.show('d');
+    }
+}

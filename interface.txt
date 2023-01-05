@@ -1,0 +1,18 @@
+using System;
+
+interface Imethod{
+    void test(String name);
+}
+class Employee : Imethod{
+    public void test(String name){
+        Console.WriteLine("this is the interface method"+" "+name);
+        
+    }
+    
+}
+class program{
+    public static void Main(string[] args){
+        Employee e=new Employee();
+        e.test("kiran");
+    }
+}
