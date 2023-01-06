@@ -1,0 +1,26 @@
+using System;
+
+class GenericClass<M,o>{
+    public GenericClass(M msg,o osg)
+    {
+        Console.WriteLine(msg+" "+osg);
+    }
+    public  static void Generic<N,p>(N ms,p psg){
+        
+        Console.WriteLine(ms+" "+psg);
+    }
+    
+}
+class program :GenericClass{
+    static void Main(string[] args){
+        GenericClass<string,string> gc =new GenericClass<string,string>("THIS IS A GENERIC CLASS","THIS IS A GENERIC CLASS");
+       GenericClass(1000,200);
+        GenericClass<int,int> gcInt =new GenericClass<int,int> (111,121);
+         GenericClass(1000,2000);
+        GenericClass<char,char> gcChar =new GenericClass<char,char>('k','g');
+         GenericClass(1000,3000);
+        GenericClass<int,int> gcCha =new GenericClass<int,int>(102,201);
+        GenericClass(1000,4000);
+      
+    }
+}
