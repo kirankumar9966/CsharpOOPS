@@ -1,0 +1,22 @@
+ using System;
+using System.Collections.Generic;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+      HashSet<string> hase=new  HashSet<string>();
+      hase.Add("kiran");
+      hase.Add("omm");
+      hase.Add("varun");
+      hase.Add("kiran");
+      hase.Add("gfh");
+      hase.Add("varun");
+      //hase.Add("omm");
+      foreach(string h in hase ){
+          Console.WriteLine(h);
+          
+      }
+     
+      
+    }
+}

@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       Stack<string> sta =new Stack<string>();
+       sta.Push("kkk");
+       sta.Push("ooo");
+       sta.Pop();
+       sta.Push("vvv");
+       sta.Push("mmm");
+       foreach(string ss in sta){
+           Console.WriteLine($"{ss}\n");
+       }
+        Console.WriteLine("peek element: "+sta.Peek());
+    }
+}

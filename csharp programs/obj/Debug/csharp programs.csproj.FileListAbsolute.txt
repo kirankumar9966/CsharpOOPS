@@ -1,0 +1,8 @@
+C:\Users\obula\Desktop\csharp\csharp programs\bin\Debug\ProjectTemplates\CSharp\1033\csharp programs.zip
+C:\Users\obula\Desktop\csharp\csharp programs\obj\Debug\csharp programs.csproj.AssemblyReference.cache
+C:\Users\obula\Desktop\csharp\csharp programs\obj\Debug\_EmptyResource.resources
+C:\Users\obula\Desktop\csharp\csharp programs\obj\Debug\csharp programs.csproj.GenerateResource.cache
+C:\Users\obula\Desktop\csharp\csharp programs\obj\Debug\csharp programs.csproj.CoreCompileInputs.cache
+C:\Users\obula\Desktop\csharp\csharp programs\obj\Debug\CSharp\1033\csharp programs.zip
+C:\Users\obula\Desktop\csharp\csharp programs\obj\Debug\csharp programs.dll
+C:\Users\obula\Desktop\csharp\csharp programs\obj\Debug\csharp programs.pdb

@@ -1,0 +1,32 @@
+using System;
+using System.Linq;
+
+ class Student 
+{
+    public int StudentId {get; set;}
+    public string? StudentName {get; set;}
+    public int Age  {get; set;}
+}
+class Programs{
+    static void Main (string[] args)
+    {
+        Student[] studentArray ={
+            new Student(){StudentId =1 , StudentName = "kirna" ,Age=22},
+             new Student(){StudentId =1 , StudentName = "omm" ,Age=22},
+              new Student(){StudentId =1 , StudentName = "kumar" ,Age=22},
+               new Student(){StudentId =1 , StudentName = "varun" ,Age=22},
+               
+        };
+        Student[] teenAgerStudents=studentArray.where(s => s.Age > 12 && s.Age < 20).ToArray();
+        Console.WriteLine("using linq to find number of the students bw the age 12 and 20:");
+        Console.WriteLine(teenAgerStudents.Length);
+        
+      Student bill = studentArray.Where(s => s.StudentName =="Bill").FirstorDefault();
+Console.Write( "using LINQ to find Id of first student whose name ts Bill :");
+Console.Writeline(bill?.StudentID);
+// Use LINQ to find student whose StudentiD is 5
+Student student5 = studentArray.where(s => s.StudentID == 5). FirstorDefault();
+Console.Write( "Useing LINQ to find student whose StudentID is 5:");
+Console.WriteLine( student5?.StudentName);
+    }
+}

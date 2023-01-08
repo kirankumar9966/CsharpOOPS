@@ -1,0 +1,19 @@
+ using System;
+using System.Collections.Generic;
+public class Lists
+{
+    public static void Main(string[] args)
+    {
+        List<string> lis =new List<string>();
+        lis.Add("kiran"+" ");
+        lis.Add("kumar");
+        lis.Remove("kumar");
+        lis.Add("omm");
+        lis.Add("varun");
+        lis.Add("narendra");
+        foreach(string n in lis){
+        Console.WriteLine(n);
+    }
+    }
+    
+}

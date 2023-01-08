@@ -1,0 +1,15 @@
+using System;
+using System.Linq;
+
+public class Program
+{
+ public static void Main(){
+ string[] names={"kiran","omm","kumar","varun","narendra"};
+     
+var que = from nam in names where nam.Contains('m') select nam;
+     
+     foreach(var nam in que )
+        Console.WriteLine(nam+" ");
+    }                        
+}
+

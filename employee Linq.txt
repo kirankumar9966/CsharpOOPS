@@ -1,0 +1,40 @@
+using System;
+using System.Linq;
+ class Employees 
+{
+    public int EmployeeId{get;set;}
+    public string EmployeeName{get;set;}
+    public int Age{get;set;}
+    
+}
+delegate bool FindEmployees(Employees emp);
+class EmployeesExtension{
+    public static Employees[] where(Employees[] empArray, FindEmployees del){
+        int i=0;
+        Employees[] result=new Employees[10];
+        foreach (Employees emp in empArray )
+        if (del(emp))
+        {
+            result[i] =emp;
+            i++;
+            Console.WriteLine(emp?.EmployeeName);
+        }
+        return result;
+    }
+}
+class program
+{
+    static void Main(string[] args){
+        Employees[] EmployeesArray ={
+            new Employees() {EmployeeId =101 ,EmployeeName ="kiran",Age = 18},
+             new Employees() {EmployeeId = 102,EmployeeName ="omm",Age = 38},
+              new Employees() {EmployeeId =103 ,EmployeeName ="varun",Age = 30},
+               new Employees() {EmployeeId =104 ,EmployeeName ="narendra",Age = 25},
+                new Employees() {EmployeeId =105 ,EmployeeName ="okk",Age = 20},
+        };
+        Employees[] Employeess = EmployeesExtension.where(EmployeesArray, delegate (Employees emp){
+            return emp.Age > 15 && emp.Age <30 ;
+        });
+    }
+}
+
